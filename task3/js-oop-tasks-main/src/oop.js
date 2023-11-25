@@ -3,7 +3,16 @@
  * Если координаты не переданы - 0,0; Аналогично если только 1 координата.
  * Реализовать метод, который возвращает расстояние от точки до центра координат (0, 0)
  */
-class Point {}
+class Point {
+    constructor(x = 0, y = 0) {
+        this.x = x;
+        this.y = y;
+        this.length = 0;
+    }
+    lengthToZero(){
+        return this.length = Math.sqrt(this.x ** 2 + this.y ** 2);
+    }
+}
 
 /**
  * Напишите класс геометрической точки в трехмерном пространстве (x, y, z),
@@ -11,7 +20,14 @@ class Point {}
  * Реализовать статический метод, который возвращает расстояние между Point3D.
  */
 class Point3D extends Point {
-    static vectorLength(a, b) {}
+    constructor(x = 0, y = 0, z = 0) {
+        super(x, y);
+        this.z = z
+        this.length = 0
+    }
+    static vectorLength(a, b) {
+        return Math.sqrt((b.x - a.x) ** 2 + (b.y - a.y) ** 2 + (b.z - a.z) ** 2)
+    }
 }
 
 /**
@@ -20,10 +36,28 @@ class Point3D extends Point {
  * Для тех, кто доверяет, но проверяет: написать тесты на методы класса (oop.spec.js)
  */
 class Queue {
-    push;
-    pop;
-    size;
-    clear;
+    constructor(initArr = []){
+       this.array = [...initArr];
+       this.size = [...initArr].length || 0;
+    }
+    push(...element){
+        this.array.push(...element)
+        this.size = this.array.length;
+    }
+    pop(){
+        if(this.array.length === 0){
+            return undefined
+        }
+        else{
+            const removedElement = this.array.shift();
+            this.size = this.array.length;
+            return removedElement;
+        }
+    }
+    clear(){
+        this.array = [];
+        this.size = 0;
+    }
 }
 
 module.exports = {
