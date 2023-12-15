@@ -17,4 +17,6 @@
 2.Склонировать репозиторий или скачать архив, который потом нужно будет распаковать.
 3.Открыть vscode
 4.Установить расширение liveserver
-5.Тыкнуть правой кнопкой мыши по index.html и нажать"Open with Live Server"
+5.Установить сервер `npm install -g json-server`
+6.Запустить сервер `json-server --watch db.json`
+7.Тыкнуть правой кнопкой мыши по index.html и нажать"Open with Live Server"
