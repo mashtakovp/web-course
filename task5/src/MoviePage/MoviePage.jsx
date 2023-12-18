@@ -16,14 +16,14 @@ function MoviePage() {
                 data => setMovie(data)
             );
         } catch (err) {
-            console.log("При получении фильма произошла ошибка");
+            alert("При получении фильма произошла ошибка");
         }
     }
 
     useEffect(() => {
         (async () => {
             await getMovie();
-        })().catch(error => { console.log("При получении фильма произошла ошибка"); });
+        })().catch(error => { alert("При получении фильма произошла ошибка"); });
     }, [params]);
 
     return (

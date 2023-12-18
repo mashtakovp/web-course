@@ -37,7 +37,7 @@ function EditCreatePage(props) {
                 }
             );
         } catch (err) {
-            console.log("При получении фильма произошла ошибка");
+            alert("При получении фильма произошла ошибка");
         }
     }
 
@@ -45,7 +45,7 @@ function EditCreatePage(props) {
         if (props.type === "edit") {
             (async () => {
                 await getMovie();
-            })().catch(error => { console.log("При получении фильма произошла ошибка"); });
+            })().catch(error => { alert("При получении фильма произошла ошибка"); });
         } else {
             setTitle("");
             setUrl("");
@@ -99,11 +99,11 @@ function EditCreatePage(props) {
                     body: JSON.stringify(movieToSet)
                 });
             } else {
-                console.log("Введите необходимые поля");
+                alert("Введите необходимые поля");
             };
             navigate(`/movie/${movieToSet.id}`);
         } catch (err) {
-            console.log(err);
+            alert(err);
         }
     }
 

@@ -34,7 +34,7 @@ function MainInfo(props) {
                         </div>
                         <div className="row-wrap gap-15-wrapper">
                             <span className="roboto-16 gray-color">Жанры</span>
-                            <span className="roboto-16">{props.movie && props.movie.genres.join(", ")}</span>
+                            <span className="roboto-16">{props.movie.genres.join(", ")}</span>
                         </div>
                         <div className="row-wrap gap-15-wrapper">
                             <span className="roboto-16 gray-color">Год производства</span>
