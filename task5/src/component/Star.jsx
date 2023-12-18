@@ -21,7 +21,7 @@ function Star(props) {
             }
             setIsFav(!isFav);
         } catch (err) {
-            alert(err);
+            console.log(err);
         }
     }
 
