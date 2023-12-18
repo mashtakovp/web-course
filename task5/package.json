@@ -15,6 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "install-server": "npm install -g json-server",
+    "run-server": "json-server --watch db.json --port 3004",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
