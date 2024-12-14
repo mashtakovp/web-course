@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Карточка 1",
+      "description": "Описание 1",
+      "imageLink": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Eo_circle_red_number-1.svg/2048px-Eo_circle_red_number-1.svg.png",
+      "supplier": "ssau"
+    },
+    {
+      "id": "2",
+      "name": "Карточка 1",
+      "description": "Описание 2 ",
+      "imageLink": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Eo_circle_red_number-2.svg/512px-Eo_circle_red_number-2.svg.png",
+      "supplier": "ssau"
+    }
+  ],
+  "creatorInfo": {
+    "name": "Маштаков Павел",
+    "group": "6409"
+  }
+}
